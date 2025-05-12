@@ -1,0 +1,27 @@
+@import '../node_modules/bulma/css/bulma.css';
+@import './bulma.css';
+
+:root {
+    --bulma-body-overflow-y: auto;
+}
+
+div.prompt[contenteditable=true] {
+
+    width: 90vw;
+    height: 5em;
+    padding: 10px;
+    min-height: 40px;
+    border-radius: 10px;
+    text-align: left;
+    font-family: sans-serif;
+    border: 2px solid #e03535;
+
+    &:has(br)::after,
+    &:empty::after {
+        content: attr(data-placeholder);
+        position: absolute;
+        transform: translate(-1px, -1.7em);
+        color: #888;
+        pointer-events: none;
+    }
+}

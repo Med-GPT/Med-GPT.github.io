@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Med-GPT</title>
+</head>
+
+<body data-theme="light" class="has-background-light">
+    <!-- <nav></nav>
+    <main class="is-flex is-justify-content-center is-align-items-center is-fullheight">
+        <div class="">
+            <div contenteditable="true" data-placeholder="Ask anything..." class="prompt"></div>
+        </div>
+        <div>
+            <button class="button is-primary is-rounded is-outlined is-small ml-2" id="send-button">
+                <span class="icon is-small">
+                    <i class="fa-solid fa-paper-plane"></i>
+                </span>
+                <span>Send</span>
+            </button>
+        </div>
+    </main> -->
+
+    <webview src="https://chatgpt.com" id="gpt" style="width:100vw; height: 100vh;" partition="persist:chatgpt"
+        useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36" />
+
+    <!-- <script type="module" src="script.ts"></script> -->
+</body>
+
+</html>

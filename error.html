@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Med-GPT</title>
+
+    <script>
+        const params = new URLSearchParams(window.location.search)
+        const err = params.get('error')
+
+        const error = (err) => document.body.innerHTML = /*html*/`
+                <div align="center">
+                    <h1>Error: <span>${err}</span></h1>
+                </div>
+            `
+        const errObj = {
+            'llm-null': 'LLM option is set to "none"',
+            'llms-undefined': 'LLMs object is undefined',
+        }
+
+        error(errObj[err] ?? 'unknown')
+
+    </script>
+
+</head>
+
+<body></body>
+
+</html>
