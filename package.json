@@ -1,20 +1,20 @@
 {
-  "name": "med-gpt.github.io",
-  "version": "0.0.0-init",
-  "description": "homepage for 'Med-GPT'",
-  "main": "index.html",
-  "scripts": {
-    "push": "pwsh -nop helper.ps1 push",
-    "host": "vite",
-    "build": "vite build"
-  },
-  "author": "Med-GPT",
-  "license": "MIT",
-  "packageManager": "pnpm@10.10.0",
-  "devDependencies": {
-    "bulma": "^1.0.4",
-    "esbuild": "^0.25.4",
-    "typescript": "^5.8.3",
-    "vite": "^6.3.5"
-  }
+    "name": "med-gpt.github.io",
+    "version": "0.0.0-init",
+    "description": "homepage for 'Med-GPT'",
+    "main": "index.html",
+    "scripts": {
+        "push": "pwsh -nop helper.ps1 push",
+        "host": "vite .",
+        "build": "vite build ."
+    },
+    "author": "Med-GPT",
+    "license": "MIT",
+    "packageManager": "pnpm@10.10.0",
+    "devDependencies": {
+        "bulma": "^1.0.4",
+        "esbuild": "^0.25.4",
+        "typescript": "^5.8.3",
+        "vite": "^6.3.5"
+    }
 }
